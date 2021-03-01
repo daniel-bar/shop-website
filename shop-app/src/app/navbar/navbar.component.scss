@@ -15,12 +15,13 @@
     max-width: map-get($sizes, web-width);
     margin: 0 auto;
     
-    &__Button {
+    &__button {
         transition: all .3s ease;
         color: #FFF;
-        font-size: 2rem;
+        font-size: 4rem;
+        font-weight: 500;
         text-decoration: none;
-        padding: 23px 20px;
+        padding: 10px 20px;
         
         &:hover {
             background-color: map-get($colors, nav-hover);
@@ -58,9 +59,37 @@
         padding: 8px;
 
         &:focus {
-            border: 2px solid map-get($colors, search-bar-hover);
+            border: 2px solid map-get($colors, nav-hover);
         }
     }
+
+    // &__dropdownMenu {
+    //     transition: all 0.5s ease;
+    //     visibility: hidden;
+    //     opacity: 0;
+    //     position: absolute;
+    //     display: none;
+    //     left: 1190px;
+    //     top: 50px;
+
+    //     &:hover {
+    //         visibility: visible;
+    //         opacity: 1;
+    //         display: block;
+    //     }
+
+        
+    //     &__links {
+    //         display: block;
+    //         transition-duration: 0.5s;
+    //         background-color: red;
+    //         padding: 60px;
+               
+    //         &:hover {
+    //             cursor: pointer;
+    //         }
+    //     }
+    // }
 
     &__icons {
         transition: all .3s ease;
@@ -77,22 +106,22 @@
     
 }
 
-.lowerNav {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    max-width: map-get($sizes, web-width);
-    margin: 0 auto;
+// .lowerNav {
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     max-width: map-get($sizes, web-width);
+//     margin: 0 auto;
     
-    &__Buttons {
-        transition: all .3s ease;
-        color: #FFF;
-        font-size: 2rem;
-        text-decoration: none;
-        padding: 23px 20px;
+//     &__Buttons {
+//         transition: all .3s ease;
+//         color: black;
+//         font-size: 2rem;
+//         text-decoration: none;
+//         padding: 23px 20px;
         
-        &:hover {
-            background-color: map-get($colors, nav-hover);
-        }
-    }
-}
+//         &:hover {
+//             background-color: map-get($colors, nav-hover);
+//         }
+//     }
+// }

@@ -3,7 +3,6 @@
 .footerContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   bottom: 0;
   position: fixed;
@@ -19,19 +18,23 @@
     flex: 2;
     margin-left: 5px;
 
-    &__contentHeader {
-      font-size: 2rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__contentHeader {
+        font-size: 2rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+      }
 
-    &__content {
-      font-size: 1.5rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__content {
+        font-size: 1.5rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+
+        &:hover {
+          color:  map-get($colors, main-hover);
+        }
+      }
   }
   
   &__helpLinks {
@@ -41,19 +44,23 @@
     flex-basis: 100%;
     flex: 2;
 
-    &__contentHeader {
-      font-size: 2rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__contentHeader {
+        font-size: 2rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+      }
 
-    &__content {
-      font-size: 1.5rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__content {
+        font-size: 1.5rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+
+        &:hover {
+          color:  map-get($colors, main-hover);
+        }
+      }
   } 
 
   &__moreLinks {
@@ -63,26 +70,29 @@
     flex-basis: 100%;
     flex: 2;
 
-    &__contentHeader {
-      font-size: 2rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__contentHeader {
+        font-size: 2rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+      }
 
-    &__content {
-      font-size: 1.5rem;
-      color:  map-get($colors, footer-text);
-      margin: 11px 10px;
-      text-decoration: none;
-    }
+      &__content {
+        font-size: 1.5rem;
+        color:  map-get($colors, footer-text);
+        margin: 11px 10px;
+        text-decoration: none;
+
+        &:hover {
+          color:  map-get($colors, main-hover);
+        }
+      }
   } 
 }
 
 .lowerFooter {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
   bottom: 0;
   position: fixed;
