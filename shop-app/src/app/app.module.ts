@@ -2,21 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
-import { IndexComponent } from './index/index.component';
-import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
+import { NavComponent } from './components/shared/nav/nav.component';
+import { HomeComponent } from './components/pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    IndexComponent,
-    RegisterComponent,
-    AboutComponent
+    AboutComponent,
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

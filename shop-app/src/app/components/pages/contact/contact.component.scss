@@ -1,0 +1,27 @@
+@import '../../config.scss';
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+
+    &__img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin-top: 70px;
+    }
+
+    &__text {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;
+        text-decoration: none;
+        color: map-get($colors, contact-text);
+    }
+  }
+  
+  
+ 
