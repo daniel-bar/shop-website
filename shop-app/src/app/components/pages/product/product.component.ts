@@ -19,7 +19,14 @@ export class ProductComponent {
   ngOnInit() {
   }
 
-  onClick(productObject: any) {
+  public trackByFunction(index: number, item: any): null | number {
+    if (!item) {
+      return null;
+    }
+    return index;
+  }
+
+  public onClick(productObject: any) {
     this.imageSrc = productObject.src;
   }
 }

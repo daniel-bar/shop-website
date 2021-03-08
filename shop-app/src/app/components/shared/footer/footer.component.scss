@@ -1,107 +1,57 @@
-@import '../../config.scss';
+@import '../../../../config.scss';
 
-.footerContainer {
+.footer {
+  box-shadow: 0 -2px 3px map-get($colors, footer-shadow);
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-  height: 20vh;
-  margin-bottom: 15px;
-  background-color: map-get($colors, footer-background);
-  
-  &__aboutLinks {
+  flex-direction: column;
+}
+
+.upperFooter {
+  padding: 20px map-get($sizes, minimal-padding);
+  background-color: map-get($colors, dark);
+
+  .upperFooterInner {
+    max-width: map-get($sizes, web-width);
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;  
-    align-items: flex-start;
-    flex-basis: 100%;
-    flex: 2;
-    margin-left: 5px;
-
-      &__contentHeader {
-        font-size: 2rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-      }
-
-      &__content {
-        font-size: 1.5rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-
-        &:hover {
-          color:  map-get($colors, main-hover);
-        }
-      }
+    flex-direction: column;
   }
-  
-  &__helpLinks {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 100%;
-    flex: 2;
-
-      &__contentHeader {
-        font-size: 2rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-      }
-
-      &__content {
-        font-size: 1.5rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-
-        &:hover {
-          color:  map-get($colors, main-hover);
-        }
-      }
-  } 
-
-  &__moreLinks {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-basis: 100%;
-    flex: 2;
-
-      &__contentHeader {
-        font-size: 2rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-      }
-
-      &__content {
-        font-size: 1.5rem;
-        color:  map-get($colors, footer-text);
-        margin: 11px 10px;
-        text-decoration: none;
-
-        &:hover {
-          color:  map-get($colors, main-hover);
-        }
-      }
-  } 
 }
 
 .lowerFooter {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
+  padding: 15px map-get($sizes, minimal-padding);
   background-color: map-get($colors, lower-footer-background);
-  height: 5vh;
+  box-shadow: 0 2px 3px map-get($colors, footer-shadow) inset;
 
-  &__rights {
-    font-size: 1.5rem;
-    color:  map-get($colors, footer-text);
-    margin: 11px 10px;
+  .lowerFooterInner {
+    max-width: map-get($sizes, web-width);
+    margin: 0 auto;
+
+    .footerRights {
+      font-size: 1.6rem;
+      color: #FFF;
+    }
+  }
+}
+
+.footerMain {
+  display: flex;
+  justify-content: space-between;
+
+  .footerLinksContainer {
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+      font-size: 2rem;
+      color: #FFF;
+    }
+
+    &__link {
+      margin-top: 4px;
+      font-size: 1.6rem;
+      color: #FFF;
+      text-decoration: none;
+    }
   }
 }

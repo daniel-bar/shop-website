@@ -1,27 +1,31 @@
-@import '../../config.scss';
+@import '../../../../config.scss';
 
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
+.contact {
+    padding: 0 map-get($sizes, minimal-padding);
+    border: 1px solid black;
 
-    &__img {
-        width: 100%;
-        max-width: 800px;
-        height: auto;
-        margin-top: 70px;
+    .contactInner {
+        margin: 0 auto;
+        max-width: map-get($sizes, web-width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__header {
+            font-size: 6rem;
+        }
+    
+        &__button {
+            background-image: linear-gradient(rgba(#000, .5), rgba(#000, .5)), url('../../../../assets/images/contact.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid #000;
+            border-radius: 8px;
+            padding: 20px 40px;
+            color: #fff;
+            font-size: 1.8rem;
+        }
     }
-
-    &__text {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem;
-        text-decoration: none;
-        color: map-get($colors, contact-text);
-    }
-  }
-  
-  
+}
  

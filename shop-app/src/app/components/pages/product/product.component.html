@@ -1,7 +1,10 @@
 <div class="productContainer">
     <img class="productContainer__image" src="{{imageSrc}}">
-    <p class="productContainer__description">ASOS Dark Future co-ord oversized in black with embroidery</p>
 
-    <button *ngFor="let imageButton of imageButtons; let i = index" (click)="onClick(imageButton)"
-        class="productContainer__button">{{i}}</button>
+    <div class="innerContainer">
+        <p class="innerContainer__description">ASOS Dark Future co-ord oversized in black with embroidery</p>
+        <button *ngFor="let imageButton of imageButtons; let i=index; trackBy: trackByFunction"
+            (click)="onClick(imageButton)" class="innerContainer__button">{{i}}</button>
+
+    </div>
 </div>

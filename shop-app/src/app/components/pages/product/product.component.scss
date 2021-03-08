@@ -1,30 +1,33 @@
-@import '../../config.scss';
+@import '../../../../config.scss';
 
 .productContainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 3px solid red;
     margin-top: 20px;
+    border: 3px solid red;
 
     &__image {
-        border: 3px solid red;
-    }
-
-    &__description {
-        font-size: 2rem;
-        flex-direction: column;
-    }
-
-    // &__title {
-    //     background-color: wheat;
-    //     font-size: 3rem;
-    // }
-
-    &__button {
         display: flex;
         flex-direction: column;
         border: 3px solid red;
+    }
+}
+
+.innerContainer {
+    align-items: center;
+    margin-left: 30px;
+ 
+    &__description {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        border: 3px solid red;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;    
+        margin-top: 15px;
+        border: 3px solid blue;
     }
 }

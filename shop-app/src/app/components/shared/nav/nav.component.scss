@@ -5,7 +5,7 @@
     position: sticky;
     top: 0;
     height: 70px;
-    background-color: map-get($colors, nav-background);
+    background-color: map-get($colors, dark);
 }
 
 .innerNav {
@@ -29,7 +29,7 @@
         }
         
         &:hover {
-            background-color: map-get($colors, nav-hover);
+            background-color: map-get($colors, dark-hover);
         }
     }
 
@@ -54,7 +54,7 @@
         padding: 8px 16px;
 
         &:focus {
-            border-color: map-get($colors, nav-hover);
+            border-color: map-get($colors, dark-hover);
         }
     }
 
@@ -93,10 +93,11 @@
         min-height: 30px;
         max-width: 30px;
         max-height: 30px;
-        filter: invert(100%) sepia(0%) saturate(7494%) hue-rotate(144deg) brightness(98%) contrast(100%);
+        fill: map-get($colors, icon-fill);
+        outline: none;
 
         &:hover {
-            filter: invert(12%) sepia(0%) saturate(1757%) hue-rotate(189deg) brightness(95%) contrast(70%);
+            fill: map-get($colors, icon-fill-hover);
         }
     }
     
@@ -117,7 +118,7 @@
 //         padding: 23px 20px;
         
 //         &:hover {
-//             background-color: map-get($colors, nav-hover);
+//             background-color: map-get($colors, dark-hover);
 //         }
 //     }
 // }
