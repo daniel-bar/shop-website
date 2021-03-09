@@ -6,11 +6,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
-// import { HomeComponent } from './components/pages/home/home.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { ProductComponent } from './components/pages/product/product.component';
 import { RegisterComponent } from './components/pages/register/register.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 
 
 @NgModule({
@@ -18,11 +19,12 @@ import { RegisterComponent } from './components/pages/register/register.componen
     AppComponent,
     NavComponent,
     FooterComponent,
-    // HomeComponent,
     AboutComponent,
     ContactComponent,
     ProductComponent,
     RegisterComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

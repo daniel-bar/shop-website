@@ -1,13 +1,15 @@
 NOT STARTED - 
 shopping bag
-contact us
+user profile
 
 
 not finished -
+contact us
 product page
+home
 nav
-footer
-index
-about
 
 DONE - 
+footer
+about
+register/login
