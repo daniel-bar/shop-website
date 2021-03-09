@@ -7,6 +7,12 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ProductComponent } from './components/pages/product/product.component';
 import { RegisterComponent } from './components/pages/register/register.component';
 import { LoginComponent } from './components/pages/login/login.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
+
+import { AccountOverviewComponent } from './components/pages/profile/account-overview/account-overview.component';
+import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
+import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
+import { PaymentMethodsComponent } from './components/pages/profile/payment-methods/payment-methods.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +21,14 @@ const routes: Routes = [
   { path: 'product', component: ProductComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'profile', component: ProfileComponent, children: [
+      { path: 'account-overview', component: AccountOverviewComponent },
+      { path: 'my-details', component: MyDetailsComponent },
+      { path: 'my-orders', component: MyOrdersComponent },
+      { path: 'payment-methods', component: PaymentMethodsComponent },
+    ]
+  },
 ];
 
 @NgModule({

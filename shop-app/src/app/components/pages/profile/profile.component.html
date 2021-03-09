@@ -1,1 +1,12 @@
-<p>profile works!</p>
+<div class="main">
+    <div class="userDetailsContainer">
+        <span class="userDetailsContainer__username">Hi, username</span>
+        <a class="userDetailsContainer__link" routerLink="/profile/account-overview">Account overview</a>
+        <a class="userDetailsContainer__link" routerLink="/profile/my-orders">My orders</a>
+        <a class="userDetailsContainer__link" routerLink="/profile/my-details">My details</a>
+        <a class="userDetailsContainer__link" routerLink="/profile/payment-methods">Payment methods</a>
+    </div>
+    <div class="childContainer">
+        <router-outlet></router-outlet>
+    </div>
+</div>
