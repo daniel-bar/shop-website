@@ -13,12 +13,14 @@ import { AccountOverviewComponent } from './components/pages/profile/account-ove
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
 import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
 import { PaymentMethodsComponent } from './components/pages/profile/payment-methods/payment-methods.component';
+import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'shopping-bag', component: ShoppingBagComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   {

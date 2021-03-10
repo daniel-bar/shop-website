@@ -16,6 +16,7 @@ import { AccountOverviewComponent } from './components/pages/profile/account-ove
 import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
 import { PaymentMethodsComponent } from './components/pages/profile/payment-methods/payment-methods.component';
+import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { PaymentMethodsComponent } from './components/pages/profile/payment-meth
     MyOrdersComponent,
     MyDetailsComponent,
     PaymentMethodsComponent,
+    ShoppingBagComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ NOT STARTED -
 
 not finished -
 user profile
+shopping-bag
 contact us
 product page
 home

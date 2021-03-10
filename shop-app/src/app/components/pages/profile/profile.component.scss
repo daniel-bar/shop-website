@@ -17,6 +17,7 @@
             padding: 10px;
             background-color: #fff;
             border: 2px solid black;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
         }
         
         &__link {
@@ -29,6 +30,7 @@
             background-color: #BEBEBE;
             text-decoration: none;
             margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 8px;
 
             &:hover {
                 color: #fff;
