@@ -15,8 +15,8 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 import { AccountOverviewComponent } from './components/pages/profile/account-overview/account-overview.component';
 import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
-import { PaymentMethodsComponent } from './components/pages/profile/payment-methods/payment-methods.component';
 import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
+import { SelectComponent } from './components/UI/select/select.component';
 
 
 @NgModule({
@@ -33,8 +33,8 @@ import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-b
     AccountOverviewComponent,
     MyOrdersComponent,
     MyDetailsComponent,
-    PaymentMethodsComponent,
     ShoppingBagComponent,
+    SelectComponent,
   ],
   imports: [
     BrowserModule,

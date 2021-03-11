@@ -12,7 +12,6 @@ import { ProfileComponent } from './components/pages/profile/profile.component';
 import { AccountOverviewComponent } from './components/pages/profile/account-overview/account-overview.component';
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
 import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
-import { PaymentMethodsComponent } from './components/pages/profile/payment-methods/payment-methods.component';
 import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
 
 const routes: Routes = [
@@ -25,10 +24,10 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
     path: 'profile', component: ProfileComponent, children: [
+      { path: '', component: AccountOverviewComponent },
       { path: 'account-overview', component: AccountOverviewComponent },
       { path: 'my-details', component: MyDetailsComponent },
       { path: 'my-orders', component: MyOrdersComponent },
-      { path: 'payment-methods', component: PaymentMethodsComponent },
     ]
   },
 ];
