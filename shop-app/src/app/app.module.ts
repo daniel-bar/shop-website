@@ -17,6 +17,7 @@ import { MyOrdersComponent } from './components/pages/profile/my-orders/my-order
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
 import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
 import { SelectComponent } from './components/UI/select/select.component';
+import { CheckoutComponent } from './components/pages/shopping-bag/checkout/checkout.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { SelectComponent } from './components/UI/select/select.component';
     MyDetailsComponent,
     ShoppingBagComponent,
     SelectComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

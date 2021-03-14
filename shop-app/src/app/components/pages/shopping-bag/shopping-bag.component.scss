@@ -13,8 +13,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px #808080;
+    border-radius: 10px;
 
-    .leftContainer {
+    .productInfo {
         display: flex;
         flex-direction: column;
         
@@ -30,7 +34,7 @@
             }
     }
 
-    .rightContainer {
+    .productDetails {
         display: flex;
         flex-direction: column;
 

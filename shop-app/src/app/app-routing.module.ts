@@ -13,6 +13,7 @@ import { AccountOverviewComponent } from './components/pages/profile/account-ove
 import { MyDetailsComponent } from './components/pages/profile/my-details/my-details.component';
 import { MyOrdersComponent } from './components/pages/profile/my-orders/my-orders.component';
 import { ShoppingBagComponent } from './components/pages/shopping-bag/shopping-bag.component';
+import { CheckoutComponent } from './components/pages/shopping-bag/checkout/checkout.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -27,7 +28,7 @@ const routes: Routes = [
       { path: '', component: AccountOverviewComponent },
       { path: 'account-overview', component: AccountOverviewComponent },
       { path: 'my-details', component: MyDetailsComponent },
-      { path: 'my-orders', component: MyOrdersComponent },
+      { path: 'my-orders', component: MyOrdersComponent }
     ]
   },
 ];
