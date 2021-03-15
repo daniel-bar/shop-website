@@ -4,14 +4,8 @@
     <div class="innerContainer">
         <p class="innerContainer__text">ASOS Dark Future co-ord oversized in black with embroidery</p>
         <label class="innerContainer__text">Size:</label>
-        <select class="innerContainer__sizeSelect">
-            <option value="XS">XS</option>
-            <option value="S">S</option>
-            <option value="M">M</option>
-            <option value="L">L</option>
-            <option value="LX">LX</option>
-        </select>
-        <label class="innerContainer__text">Price: 40$</label>
+        <app-select [options]="['XS', 'S', 'M', 'L', 'XL']" placeholder="Size" width="100px"></app-select>
+        <label class="innerContainer__price">Price: 40$</label>
         <div class="buttonContainer">
             <button class="buttonContainer__button">Add to bag</button>
         </div>
